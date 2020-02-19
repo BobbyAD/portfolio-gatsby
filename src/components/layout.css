@@ -3,10 +3,6 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     background: rgb(7, 28, 56);
-    background-image: url('../images/Render001.png');
-    background-size: cover;
-    background-position: right 0px bottom -1000px;
-    background-repeat: no-repeat;
 }
 body {
     margin: 0;
