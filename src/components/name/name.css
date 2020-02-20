@@ -22,8 +22,7 @@
     height: 80vh;
     width: 100%;
     background-image: url('../../images/Render001.png');
-    background-size: cover;
-    background-position: right top -300px;
+    background-position: right top -600px;
     background-repeat: no-repeat;
 }
 
