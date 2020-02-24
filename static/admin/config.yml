@@ -13,8 +13,39 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Responsibilities", name: "responsibilities", widget: "string" }
+      - label: "Tech"
+        name: "tech"
+        widget: "list"
+        fields:
+          - {label: "Technology", name: "technology", widget: "string" }
       - label: "Images"
         name: "images"
         widget: "list"
         fields:
-          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image", name: "image", widget: "image" }
+  - name: "about"
+    label: "About"
+    folder: "src/pages/about"
+    create: true
+    fields:
+      - { label: "Description", name: "description", widget: "string" }
+  - name: "contact"
+    label: "Contact"
+    folder: "src/pages/contact"
+    create: true
+    fields:
+      - { label: "Picture", name: "picture", widget: "image" }
+      - { label: "Github", name: "github", widget: "string" }
+      - { label: "Linkedin", name: "linkedin", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+  - name: "skills"
+    label: "Skills"
+    folder: "src/pages/skills"
+    create: true
+    fields:
+      - label: "Skills"
+        name: "skills"
+        widget: "list"
+        fields:
+          - {label: "Skill", name: "skill", widget: "string" }
