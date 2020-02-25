@@ -14,6 +14,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Responsibilities", name: "responsibilities", widget: "string" }
+      - { label: "Git", name: "git", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
       - label: "Tech"
         name: "tech"
         widget: "list"
