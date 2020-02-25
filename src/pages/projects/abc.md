@@ -1,4 +1,5 @@
 ---
+order: 1
 title: Project Firefly
 description: >-
   Project Firefly is a coding game aimed at young children, approximately five
