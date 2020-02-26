@@ -27,31 +27,24 @@ collections:
         widget: "list"
         fields:
           - {label: "Image", name: "image", widget: "image" }
-  - name: "about"
-    label: "About"
-    folder: "src/pages/about"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-  - name: "contact"
-    label: "Contact"
-    folder: "src/pages/contact"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Picture", name: "picture", widget: "image" }
-      - { label: "Github", name: "github", widget: "string" }
-      - { label: "Linkedin", name: "linkedin", widget: "string" }
-      - { label: "Email", name: "email", widget: "string" }
-  - name: "skills"
-    label: "Skills"
-    folder: "src/pages/skills"
+  - name: "ancillary"
+    label: "ancillary"
+    folder: "src/pages/ancillary"
     create: true
     fields:
       - label: "Skills"
         name: "skills"
         widget: "list"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
           - {label: "Skill", name: "skill", widget: "string" }
+      - name: "contact"
+        label: "Contact"
+        fields:
+          - { label: "Picture", name: "picture", widget: "image" }
+          - { label: "Github", name: "github", widget: "string" }
+          - { label: "Linkedin", name: "linkedin", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+      - name: "about"
+        label: "About"
+        fields:
+          - { label: "Description", name: "description", widget: "string" }
