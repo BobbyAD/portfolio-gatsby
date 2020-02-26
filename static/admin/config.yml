@@ -32,12 +32,14 @@ collections:
     folder: "src/pages/about"
     create: true
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
   - name: "contact"
     label: "Contact"
     folder: "src/pages/contact"
     create: true
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Picture", name: "picture", widget: "image" }
       - { label: "Github", name: "github", widget: "string" }
       - { label: "Linkedin", name: "linkedin", widget: "string" }
@@ -51,4 +53,5 @@ collections:
         name: "skills"
         widget: "list"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
           - {label: "Skill", name: "skill", widget: "string" }
