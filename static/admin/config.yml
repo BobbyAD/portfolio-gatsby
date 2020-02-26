@@ -32,6 +32,10 @@ collections:
     folder: "src/pages/ancillary"
     create: true
     fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "ancillary"
       - label: "Skills"
         name: "skills"
         widget: "list"
