@@ -13,7 +13,6 @@ tech:
   - technology: Gatsby
   - technology: React
   - technology: Netlify CMS
-images:
-  - image: /img/banner.png
+images: []
 ---
 
