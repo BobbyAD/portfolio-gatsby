@@ -32,9 +32,6 @@ export default () => (
                             frontmatter {
                                 title
                                 description
-                                images {
-                                    image
-                                }
                             } 
                         }
                     }
