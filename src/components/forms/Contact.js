@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 
-
 // Netlify Gatsby basic Contact form
 export const Contact = () => {
     const [state, setState] = useState({})
@@ -20,7 +19,11 @@ export const Contact = () => {
                 ...state,
             }),
         })
-            .then(() => navigate(form.getAttribute("action")))
+            .then(() => {
+                console.log("YOYOYO")
+                navigate(form.getAttribute("action"))
+                alert("Nice")
+            })
             .catch(error => alert(error))
     }
 
