@@ -9,7 +9,7 @@ const DataTest = ({data}) => {
                 <div>
                     <h3>{post.node.frontmatter.title}</h3>
                     {console.log(post)}
-                    {post.node.frontmatter.images !== null ? (
+                    {post.node.frontmatter.images ? (
                         post.node.frontmatter.images.map(img => (
                             <img src={img.image} />
                         ))
