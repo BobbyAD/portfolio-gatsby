@@ -41,14 +41,8 @@ collections:
         widget: "list"
         fields:
           - {label: "Skill", name: "skill", widget: "string" }
-      - name: "contact"
-        label: "Contact"
-        fields:
-          - { label: "Picture", name: "picture", widget: "image" }
-          - { label: "Github", name: "github", widget: "string" }
-          - { label: "Linkedin", name: "linkedin", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
-      - name: "about"
-        label: "About"
-        fields:
-          - { label: "Description", name: "description", widget: "string" }
+      - { label: "Picture", name: "picture", widget: "image" }
+      - { label: "Github", name: "github", widget: "string" }
+      - { label: "Linkedin", name: "linkedin", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "About", name: "about", widget: "string" }
