@@ -6,6 +6,9 @@ export const Project = ({ project }) => {
         <div>
             <p>{project.title}</p>
             <p>{project.description}</p>
+            <p>{project.responsibilities}</p>
+            <p>{project.git}</p>
+            <p>{project.link}</p>
         </div>
     )
 }
