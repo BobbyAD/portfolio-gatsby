@@ -1,5 +1,13 @@
 import React, { useState } from "react"
 
+function encode(data) {
+    return Object.keys(data)
+        .map(
+            key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&")
+}
+
 // Netlify Gatsby basic Contact form
 export const Contact = () => {
     const [state, setState] = useState({})
