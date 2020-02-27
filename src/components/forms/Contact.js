@@ -10,7 +10,11 @@ function encode(data) {
 
 // Netlify Gatsby basic Contact form
 export const Contact = () => {
-    const [state, setState] = useState({})
+    const [state, setState] = useState({
+        name: "",
+        email: "",
+        message: "",
+    })
 
     const handleChange = e => {
         setState({ ...state, [e.target.name]: e.target.value })
@@ -29,7 +33,6 @@ export const Contact = () => {
         })
             .then(() => {
                 console.log("YOYOYO")
-                navigate(form.getAttribute("action"))
                 alert("Nice")
             })
             .catch(error => alert(error))
@@ -62,6 +65,7 @@ export const Contact = () => {
                             type="text"
                             name="name"
                             onChange={handleChange}
+                            value={state.name}
                         />
                     </label>
                 </p>
@@ -73,6 +77,7 @@ export const Contact = () => {
                             type="email"
                             name="email"
                             onChange={handleChange}
+                            value={state.email}
                         />
                     </label>
                 </p>
@@ -80,7 +85,11 @@ export const Contact = () => {
                     <label>
                         Message:
                         <br />
-                        <textarea name="message" onChange={handleChange} />
+                        <textarea
+                            name="message"
+                            onChange={handleChange}
+                            value={state.message}
+                        />
                     </label>
                 </p>
                 <p>
