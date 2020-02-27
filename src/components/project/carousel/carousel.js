@@ -6,3 +6,5 @@
 // repeat
 // pause if hovered?
 // add arrows?
+
+// Gonna skip this until next week, get everything else going. 
