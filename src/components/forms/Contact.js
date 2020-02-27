@@ -32,8 +32,12 @@ export const Contact = () => {
             }),
         })
             .then(() => {
-                console.log("YOYOYO")
-                alert("Nice")
+                alert("Thank you!\nI will get back to you as soon as possible.")
+                setState({
+                    name: "",
+                    email: "",
+                    message: "",
+                })
             })
             .catch(error => alert(error))
     }
