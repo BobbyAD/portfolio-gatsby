@@ -1,4 +1,5 @@
 ---
+templateKey: 'project'
 order: 2
 title: Gnarly Funky
 description: >-

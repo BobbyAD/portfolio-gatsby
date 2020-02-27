@@ -1,4 +1,5 @@
 ---
+templateKey: 'project'
 order: 1
 title: Project Firefly
 description: >-

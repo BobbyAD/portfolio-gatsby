@@ -1,4 +1,5 @@
 ---
+templateKey: 'project'
 order: 3
 title: Portfolio
 description: >-
