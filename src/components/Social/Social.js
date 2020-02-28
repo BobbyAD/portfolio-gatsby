@@ -1,5 +1,5 @@
-import React from "./node_modules/react"
-import { graphql, StaticQuery } from "./node_modules/gatsby"
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
 
 const Social = ({ data }) => {
     return (
