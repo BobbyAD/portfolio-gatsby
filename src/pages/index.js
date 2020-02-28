@@ -10,13 +10,15 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Name from "../components/name/name"
 import { Contact } from "../components/forms/Contact";
-import Projects from "../components/project/projects";
+import Projects from "../components/projects/Projects";
+import Skills from "../components/skills/Skills";
 
 const IndexPage = () => (
     <div>
         <SEO title="Home" />
         <Name />
         <Projects />
+        <Skills />
         <Contact />
     </div>
 )
