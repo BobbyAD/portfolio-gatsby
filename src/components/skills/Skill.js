@@ -3,7 +3,7 @@ import React from 'react'
 export const Skill = ({skill}) => {
     return (
         <div>
-            {skill}
+            <p>{skill}</p>
         </div>
     )
 }

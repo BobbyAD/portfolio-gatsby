@@ -4,8 +4,6 @@ import { Skill } from "./Skill"
 
 const Skills = ({ data }) => {
 
-    console.log(data);
-
     return (
         <div>
             <h1>Skills</h1>
