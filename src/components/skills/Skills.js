@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import { Skill } from "./Skill"
+import { Skill } from "./skill"
 
 const Skills = ({ data }) => {
 
