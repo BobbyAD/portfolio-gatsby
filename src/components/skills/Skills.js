@@ -14,32 +14,26 @@ const Skills = ({ data }) => {
     )
 }
 
-// export default () => (
-//     <StaticQuery
-//         query={graphql`
-//             query SkillsQuery {
-//                 allMarkdownRemark(
-//                     sort: { order: ASC, fields: [frontmatter___skills___skill] }
-//                     filter: { frontmatter: { templateKey: { eq: "ancillary" } } }
-//                 ) {
-//                     edges {
-//                         node {
-//                             frontmatter {
-//                                 skills {
-//                                     skill
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         `}
-//         render={data => <Skills data={data.allMarkdownRemark.edges[0].node.frontmatter.skills} />}
-//     />
-// )
-
 export default () => (
-    <div>
-        asdf
-    </div>
+    <StaticQuery
+        query={graphql`
+            query SkillsQuery {
+                allMarkdownRemark(
+                    sort: { order: ASC, fields: [frontmatter___skills___skill] }
+                    filter: { frontmatter: { templateKey: { eq: "ancillary" } } }
+                ) {
+                    edges {
+                        node {
+                            frontmatter {
+                                skills {
+                                    skill
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        `}
+        render={data => <Skills data={data.allMarkdownRemark.edges[0].node.frontmatter.skills} />}
+    />
 )
