@@ -7,9 +7,9 @@ const Skills = ({ data }) => {
     return (
         <div>
             <h1>Skills</h1>
-            {data.map(skill => (
+            {/* {data.map(skill => (
                 <Skill skill={skill.skill} key={skill.skill} />
-            ))}
+            ))} */}
         </div>
     )
 }
