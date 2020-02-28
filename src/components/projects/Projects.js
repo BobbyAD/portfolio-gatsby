@@ -3,8 +3,6 @@ import { graphql, StaticQuery } from "gatsby"
 import { Project } from "./project"
 
 const Projects = ({ data }) => {
-    const projects = []
-
     return (
         <div>
             <h1>Projects</h1>

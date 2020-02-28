@@ -12,6 +12,7 @@ import Name from "../components/name/name"
 import { Contact } from "../components/forms/Contact";
 import Projects from "../components/projects/Projects";
 import Skills from "../components/skills/Skills";
+import Social from "../components/social/Social";
 
 const IndexPage = () => (
     <div>
@@ -19,6 +20,7 @@ const IndexPage = () => (
         <Name />
         <Projects />
         <Skills />
+        <Social />
         <Contact />
     </div>
 )
