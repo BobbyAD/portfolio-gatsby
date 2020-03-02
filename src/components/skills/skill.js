@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react"
 
-export const Skill = ({skill}) => {
-    return (
-        <div>
-            <p>{skill}</p>
-        </div>
-    )
+export const Skill = ({ skill, style = {} }) => {
+    return <p style={style}>{skill}</p>
 }
