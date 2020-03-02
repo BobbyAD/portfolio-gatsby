@@ -1,4 +1,6 @@
-export default {
+import { createUseStyles } from 'react-jss'
+
+export default createUseStyles({
     title: {},
     container: {
         display: "flex",
@@ -13,4 +15,4 @@ export default {
     skill: {
         border: "1px solid green",
     },
-}
+})

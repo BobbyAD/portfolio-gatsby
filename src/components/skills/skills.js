@@ -5,14 +5,16 @@ import { Title } from "../title/title"
 import skillStyles from "./skillStyles"
 
 const Skills = ({ data }) => {
+    const classes = skillStyles()
+
     return (
-        <div style={skillStyles.container}>
-            <Title title="Skills" style={skillStyles.title} />
-            <div style={skillStyles.skillContainer}>
+        <div className={classes.container}>
+            <Title title="Skills" className={classes.title} />
+            <div className={classes.skillContainer}>
                 {data.map(skill => (
                     <Skill
                         skill={skill.skill}
-                        style={skillStyles.skill}
+                        style={classes.skill}
                         key={skill.skill}
                     />
                 ))}
