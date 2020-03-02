@@ -9,7 +9,7 @@ const Skills = ({ data }) => {
 
     return (
         <div className={classes.container}>
-            <Title title="Skills" className={classes.title} />
+            <Title title="Skills" />
             <div className={classes.skillContainer}>
                 {data.map(skill => (
                     <Skill

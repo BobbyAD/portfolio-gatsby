@@ -1,8 +1,11 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 //CSS Reset
 import "../style/reset.css"
+//Fonts and global stuff
 import "../style/base.css"
+//Actual styling
+import indexStyles from "./indexStyles.js"
 
 import SEO from "../components/seo"
 import Name from "../components/name/name"
@@ -11,15 +14,21 @@ import Projects from "../components/projects/projects.js"
 import Skills from "../components/skills/skills.js"
 import Social from "../components/social/social.js"
 
-const IndexPage = () => (
-    <div>
-        <SEO title="Home" />
-        <Name />
-        <Projects />
-        <Skills />
-        <Social />
-        <Contact />
-    </div>
-)
+const IndexPage = () => {
+    const classes = indexStyles()
+
+    return (
+        <div className={classes.bigContainer}>
+            <SEO title="Home" />
+            <Name />
+            <div className={classes.marginContainer}>
+                <Projects />
+                <Skills />
+                <Social />
+                <Contact />
+            </div>
+        </div>
+    )
+}
 
 export default IndexPage

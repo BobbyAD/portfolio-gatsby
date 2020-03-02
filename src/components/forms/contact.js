@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Title } from "../title/title"
 
 function encode(data) {
     return Object.keys(data)
@@ -31,7 +32,7 @@ export const Contact = () => {
                 ...state,
             }),
         })
-            .then((res) => {
+            .then(res => {
                 alert("Thank you!\nI will get back to you as soon as possible.")
                 setState({
                     name: "",
@@ -44,7 +45,7 @@ export const Contact = () => {
 
     return (
         <div>
-            <h1>Contact</h1>
+            <Title title="Contact" />
             <form
                 name="contact"
                 method="post"
