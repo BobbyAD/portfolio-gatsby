@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import { Skill } from "./skill"
+import { Title } from "../title/title"
+import skillStyles from "./skillStyles"
 
 const Skills = ({ data }) => {
-
     return (
         <div>
-            <h1>Skills</h1>
+            <Title title="Skills" style={skillStyles.title} />
             {data.map(skill => (
                 <Skill skill={skill.skill} key={skill.skill} />
             ))}
@@ -20,7 +21,9 @@ export default () => (
             query SkillsQuery {
                 allMarkdownRemark(
                     sort: { order: ASC, fields: [frontmatter___skills___skill] }
-                    filter: { frontmatter: { templateKey: { eq: "ancillary" } } }
+                    filter: {
+                        frontmatter: { templateKey: { eq: "ancillary" } }
+                    }
                 ) {
                     edges {
                         node {
@@ -34,6 +37,10 @@ export default () => (
                 }
             }
         `}
-        render={data => <Skills data={data.allMarkdownRemark.edges[0].node.frontmatter.skills} />}
+        render={data => (
+            <Skills
+                data={data.allMarkdownRemark.edges[0].node.frontmatter.skills}
+            />
+        )}
     />
 )

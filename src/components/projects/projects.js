@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import { Project } from "./project"
+import { Title } from "../title/title"
 
 const Projects = ({ data }) => {
     return (
         <div>
-            <h1>Projects</h1>
+            <Title title="Projects" />
             {data.map(project => (
                 <Project project={project.node.frontmatter} key={project.node.id} />
             ))}

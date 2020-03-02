@@ -1,10 +1,11 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
+import { Title } from "../title/title"
 
 const Social = ({ data }) => {
     return (
         <div>
-            <h1>Follow Me</h1>
+            <Title title="Follow Me" />
             <p>{data.github}</p>
             <p>{data.linkedin}</p>
         </div>
