@@ -1,13 +1,24 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import { Title } from "../title/title"
+import socialStyles from "./socialStyles"
 
 const Social = ({ data }) => {
+    const classes = socialStyles()
+
     return (
-        <div>
+        <div className={classes.container}>
             <Title title="Follow Me" />
-            <p>{data.github}</p>
-            <p>{data.linkedin}</p>
+            <div className={classes.linkContainer}>
+                <a href={data.github} className={classes.link}>
+                    {data.github}
+                </a>
+            </div>
+            <div className={classes.linkContainer}>
+                <a href={data.linkedin} className={classes.link}>
+                    {data.linkedin}
+                </a>
+            </div>
         </div>
     )
 }
@@ -18,7 +29,9 @@ export default () => (
             query SocialQuery {
                 allMarkdownRemark(
                     sort: { order: ASC, fields: [frontmatter___order] }
-                    filter: { frontmatter: { templateKey: { eq: "ancillary" } } }
+                    filter: {
+                        frontmatter: { templateKey: { eq: "ancillary" } }
+                    }
                 ) {
                     edges {
                         node {
@@ -31,6 +44,8 @@ export default () => (
                 }
             }
         `}
-        render={data => <Social data={data.allMarkdownRemark.edges[0].node.frontmatter} />}
+        render={data => (
+            <Social data={data.allMarkdownRemark.edges[0].node.frontmatter} />
+        )}
     />
 )

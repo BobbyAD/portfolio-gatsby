@@ -35,10 +35,17 @@ export default createUseStyles({
         fontSize: "1.3rem",
         marginBottom: "1rem",
     },
-    link: {
+    linkContainer: {
+        margin: ".5rem 0",
+        display: 'flex',
         fontSize: "1.1rem",
+    },
+    link: {
         color: "whitesmoke",
         textDecoration: 'underline',
-        margin: ".5rem 0"
+    },
+    linkTitle: {
+        fontWeight: "600",
+        marginRight: "1rem",
     }
 })
