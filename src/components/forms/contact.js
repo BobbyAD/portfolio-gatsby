@@ -11,6 +11,7 @@ function encode(data) {
 }
 
 // Netlify Gatsby basic Contact form
+//TODO: JS input validation
 export const Contact = () => {
     const [state, setState] = useState({
         name: "",
@@ -68,30 +69,40 @@ export const Contact = () => {
                 </p>
                 <div className={classes.topForm}>
                     <label className={classes.topLabel}>
-                        Name
+                        <h3 className={classes.headers}>
+                            Name
+                        </h3>
                         <input
                             type="text"
                             name="name"
                             onChange={handleChange}
                             value={state.name}
+                            className={classes.inputField}
                         />
                     </label>
                     <label className={classes.topLabel}>
-                        Email
+                        <h3 className={classes.headers}>
+                            Email
+                        </h3>
                         <input
                             type="email"
                             name="email"
                             onChange={handleChange}
                             value={state.email}
+                            className={classes.inputField}
                         />
                     </label>
                 </div>
                 <label className={classes.messageLabel}>
-                    Message
+                    <h3 className={classes.headers}>
+                        Message
+                    </h3>
                     <textarea
                         name="message"
                         onChange={handleChange}
                         value={state.message}
+                        className={classes.inputField + ' message'}
+                        rows={8}
                     />
                 </label>
                 <button type="submit" className={classes.button}>Send</button>
