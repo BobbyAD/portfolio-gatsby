@@ -10,5 +10,8 @@ export default createUseStyles({
         fontSize: "1.5rem",
         fontWeight: "600",
         color: "#01FF61",
+    },
+    spacer: {
+        height: "10vh",
     }
 })

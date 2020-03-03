@@ -9,6 +9,7 @@ const Projects = ({ data }) => {
 
     return (
         <div className={classes.container}>
+            <div className={classes.spacer}/>
             <Title title="Projects" />
             {data.map(project => (
                 <Project project={project.node.frontmatter} key={project.node.id} />
