@@ -19,7 +19,7 @@ export default createUseStyles({
         justifyContent: 'space-around',
     },
     skill: {
-        border: "2px solid green",
+        border: "2px solid #01FF61",
         borderRadius: "10px",
         width: "45%",
         margin: "10px 0",

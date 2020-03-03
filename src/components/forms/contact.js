@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Title } from "../title/title"
+import contactStyles from "./contactStyles"
 
 function encode(data) {
     return Object.keys(data)
@@ -16,6 +17,7 @@ export const Contact = () => {
         email: "",
         message: "",
     })
+    const classes = contactStyles()
 
     const handleChange = e => {
         setState({ ...state, [e.target.name]: e.target.value })
@@ -44,8 +46,9 @@ export const Contact = () => {
     }
 
     return (
-        <div>
+        <div className={classes.container}>
             <Title title="Contact" />
+
             <form
                 name="contact"
                 method="post"
@@ -53,6 +56,7 @@ export const Contact = () => {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
+                className={classes.form}
             >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
@@ -62,10 +66,9 @@ export const Contact = () => {
                         <input name="bot-field" onChange={handleChange} />
                     </label>
                 </p>
-                <p>
-                    <label>
-                        Your name:
-                        <br />
+                <div className={classes.topForm}>
+                    <label className={classes.topLabel}>
+                        Name
                         <input
                             type="text"
                             name="name"
@@ -73,11 +76,8 @@ export const Contact = () => {
                             value={state.name}
                         />
                     </label>
-                </p>
-                <p>
-                    <label>
-                        Your email:
-                        <br />
+                    <label className={classes.topLabel}>
+                        Email
                         <input
                             type="email"
                             name="email"
@@ -85,21 +85,16 @@ export const Contact = () => {
                             value={state.email}
                         />
                     </label>
-                </p>
-                <p>
-                    <label>
-                        Message:
-                        <br />
-                        <textarea
-                            name="message"
-                            onChange={handleChange}
-                            value={state.message}
-                        />
-                    </label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+                </div>
+                <label className={classes.messageLabel}>
+                    Message
+                    <textarea
+                        name="message"
+                        onChange={handleChange}
+                        value={state.message}
+                    />
+                </label>
+                <button type="submit" className={classes.button}>Send</button>
             </form>
         </div>
     )
