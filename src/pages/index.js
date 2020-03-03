@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 //CSS Reset
 import "../style/reset.css"
 //Fonts and global stuff
 import "../style/base.css"
 //Actual styling
-import indexStyles from "./indexStyles.js"
+import indexStyles from "../style/indexStyles.js/index.js"
 
 import SEO from "../components/seo"
 import Name from "../components/name/name"
