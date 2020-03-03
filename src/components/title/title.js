@@ -6,7 +6,7 @@ export const Title = ({ title }) => {
         title: {
             fontSize: "5rem",
             fontWeight: "600",
-            marginBottom: "2rem",
+            margin: "4rem 0 1rem",
         },
     })
 
