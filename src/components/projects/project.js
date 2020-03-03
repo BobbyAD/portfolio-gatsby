@@ -12,8 +12,12 @@ export const Project = ({ project }) => {
                 <p className={classes.responsibilities}>
                     {project.responsibilities}
                 </p>
-                <a href={`${classes.git}`}>{project.git}</a>
-                <a href={`${classes.link}`}>{project.link}</a>
+                <a href={project.git}>
+                    <div className={classes.link}>{project.git}</div>
+                </a>
+                <a href={project.link}>
+                    <div className={classes.link}>{project.link}</div>
+                </a>
             </div>
         </div>
     )
