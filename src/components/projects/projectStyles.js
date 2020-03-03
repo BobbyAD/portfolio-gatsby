@@ -9,5 +9,6 @@ export default createUseStyles({
     title: {
         fontSize: "1.5rem",
         fontWeight: "600",
+        color: "#01FF61",
     }
 })
