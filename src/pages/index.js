@@ -18,16 +18,18 @@ const IndexPage = () => {
     const classes = indexStyles()
 
     return (
-        <div className={classes.bigContainer}>
+        <>
             <SEO title="Home" />
             <Name />
-            <div className={classes.marginContainer}>
-                <Projects />
-                <Skills />
-                <Social />
-                <Contact />
+            <div className={classes.bigContainer}>
+                <div className={classes.marginContainer}>
+                    <Projects />
+                    <Skills />
+                    <Social />
+                    <Contact />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
