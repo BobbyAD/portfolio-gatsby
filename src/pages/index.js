@@ -5,7 +5,7 @@ import "../style/reset.css"
 //Fonts and global stuff
 import "../style/base.css"
 //Actual styling
-import indexStyles from "../style/indexStyles.js/index.js"
+import indexStyles from "../style/indexStyles.js"
 
 import SEO from "../components/seo"
 import Name from "../components/name/name"
