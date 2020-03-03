@@ -7,10 +7,10 @@ export const Project = ({ project }) => {
     return (
         <div>
             <h3 className={classes.title}>{project.title}</h3>
-            <p>{project.description}</p>
-            <p>{project.responsibilities}</p>
-            <p>{project.git}</p>
-            <p>{project.link}</p>
+            <p className={classes.description}>{project.description}</p>
+            <p className={classes.responsibilities}>{project.responsibilities}</p>
+            <a href={`${classes.git}`}>{project.git}</a>
+            <a href={`${classes.link}`}>{project.link}</a>
         </div>
     )
 }
