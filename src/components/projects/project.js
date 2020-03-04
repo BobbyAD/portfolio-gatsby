@@ -11,6 +11,7 @@ export const Project = ({ project }) => {
             <div className={classes.descriptionContainer}>
                 <Img
                     fluid={project.images[0].image.childImageSharp.fluid}
+                    className={classes.image}
                     alt="Project Picture"
                 />
                 <p className={classes.description}>{project.description}</p>

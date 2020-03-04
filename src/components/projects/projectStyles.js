@@ -24,6 +24,9 @@ export default createUseStyles({
         width: "30%",
         marginBottom: "1.1rem",
     },
+    image: {
+        marginBottom: "1.4rem",
+    },
     spacer: {
         height: "10vh",
     },
