@@ -34,7 +34,6 @@ export default createUseStyles({
         color: "whitesmoke",
         fontSize: "1.1rem",
         borderBottom: "2px solid #01FF61",
-        transition: "1s",
         '&:invalid': {
             borderBottom: "2px solid red",
             boxShadow: "none",
