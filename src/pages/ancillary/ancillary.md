@@ -20,7 +20,7 @@ about: >-
   Hi, I'm Bobby. After years of working as a texture artist, I made the
   transition to web development. At the moment I use React mostly for front end,
   and Java or Firestore for a backend, but I'm constantly learning new things
-  and working on new projects. \n \n Follow me on Github or LinkedIn to keep up
-  with my work.
+  and working on new projects. Follow me on Github or LinkedIn to keep up with
+  my work.
 ---
 
