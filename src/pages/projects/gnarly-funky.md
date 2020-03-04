@@ -18,6 +18,6 @@ tech:
   - technology: React
   - technology: Django
 images:
-  - image: /img/portfolio_01.jpg
+  - image: /img/gnarly_funky_01.jpg
 ---
 
