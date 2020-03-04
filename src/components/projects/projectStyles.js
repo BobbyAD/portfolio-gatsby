@@ -24,6 +24,11 @@ export default createUseStyles({
         width: "30%",
         marginBottom: "1.1rem",
     },
+    tech: {
+        fontSize: "1.4rem",
+        marginBottom: "1.4rem",
+        fontWeight: "600",
+    },
     image: {
         marginBottom: "1.4rem",
     },

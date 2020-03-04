@@ -14,6 +14,16 @@ export const Project = ({ project }) => {
                     className={classes.image}
                     alt="Project Picture"
                 />
+                <p className={classes.tech}>
+                {project.tech.map((tech) => {
+                    return (
+                        tech.technology === project.tech[project.tech.length - 1].technology ?
+                        `${tech.technology}`
+                        :
+                        `${tech.technology} | `
+                    )
+                })}
+                </p>
                 <p className={classes.description}>{project.description}</p>
                 <p className={classes.responsibilities}>
                     {project.responsibilities}

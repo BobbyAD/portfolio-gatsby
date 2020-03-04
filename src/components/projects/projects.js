@@ -5,14 +5,19 @@ import { Title } from "../title/title"
 import projectStyles from "./projectStyles"
 
 const Projects = ({ data }) => {
-    const classes = projectStyles();
+    const classes = projectStyles()
+
+    console.log(data)
 
     return (
         <div className={classes.container}>
-            <div className={classes.spacer}/>
+            <div className={classes.spacer} />
             <Title title="Projects" />
             {data.map(project => (
-                <Project project={project.node.frontmatter} key={project.node.id} />
+                <Project
+                    project={project.node.frontmatter}
+                    key={project.node.id}
+                />
             ))}
         </div>
     )
@@ -38,11 +43,17 @@ export default () => (
                                 images {
                                     image {
                                         childImageSharp {
-                                            fluid(maxWidth: 1280, quality: 100) {
+                                            fluid(
+                                                maxWidth: 1280
+                                                quality: 100
+                                            ) {
                                                 ...GatsbyImageSharpFluid
                                             }
                                         }
                                     }
+                                }
+                                tech {
+                                    technology
                                 }
                             }
                         }
