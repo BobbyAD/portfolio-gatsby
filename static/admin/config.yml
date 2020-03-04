@@ -14,8 +14,8 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
       - { label: "Order", name: "order", widget: "number"}
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Responsibilities", name: "responsibilities", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Responsibilities", name: "responsibilities", widget: "text" }
       - { label: "Git", name: "git", widget: "string" }
       - { label: "Link", name: "link", widget: "string" }
       - label: "Tech"
