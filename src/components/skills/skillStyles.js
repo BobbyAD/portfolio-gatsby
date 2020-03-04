@@ -26,7 +26,7 @@ export default createUseStyles({
         padding: "20px 0",
         display: 'flex',
         justifyContent: 'center',
-        fontSize: "1.4rem",
+        fontSize: "calc(.4rem + 3vmin)",
         backgroundColor: "#061221",
     },
 })
