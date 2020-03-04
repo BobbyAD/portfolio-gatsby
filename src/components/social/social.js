@@ -3,6 +3,8 @@ import { graphql, StaticQuery } from "gatsby"
 import { Title } from "../title/title"
 import socialStyles from "./socialStyles"
 
+
+//TODO: about https://www.impressivewebs.com/how-to-put-a-multi-line-indent-on-a-styled-blockquote/
 const Social = ({ data }) => {
     const classes = socialStyles()
 
