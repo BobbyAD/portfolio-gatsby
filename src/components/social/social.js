@@ -8,15 +8,24 @@ import Img from "gatsby-image"
 const Social = ({ data, pic }) => {
     const classes = socialStyles()
 
-    console.log(data.picture)
-
     return (
         <div className={classes.container}>
             <Title title="About Me" />
-            <blockquote className={classes.about}>
-                <Img fluid={data.picture.childImageSharp.fluid} alt="Bobby's Picture" />
-                {data.about}
-            </blockquote>
+            <div className={classes.about}>
+                <Img
+                    fluid={data.picture.childImageSharp.fluid}
+                    alt="Bobby's Picture"
+                />
+                {/* This is a little dumb, surely there's a cleaner way */}
+                {data.about.split("\n").map(block => {
+                    return (
+                        <>
+                            {block}
+                            <br />
+                        </>
+                    )
+                })}
+            </div>
             <div className={classes.linkContainer}>
                 <a href={data.github} className={classes.link}>
                     {data.github}
@@ -61,9 +70,7 @@ export default () => (
             }
         `}
         render={data => (
-            <Social 
-                data={data.allMarkdownRemark.edges[0].node.frontmatter} 
-            />
+            <Social data={data.allMarkdownRemark.edges[0].node.frontmatter} />
         )}
     />
 )
