@@ -13,7 +13,7 @@ responsibilities: >-
   rooms. The process is repeated a number of times, creating a dense
   interconnected center and lengthy branches out in each direction. 
 git: 'https://github.com/Gnarly-Funky/'
-link: 'https://github.com/Gnarly-Funky/'
+link: 'https://gnarly-funky.netlify.com/'
 tech:
   - technology: React
   - technology: Django
