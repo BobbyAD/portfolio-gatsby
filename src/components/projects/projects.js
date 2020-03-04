@@ -35,6 +35,15 @@ export default () => (
                                 responsibilities
                                 git
                                 link
+                                images {
+                                    image {
+                                        childImageSharp {
+                                            fluid(maxWidth: 1280, quality: 100) {
+                                                ...GatsbyImageSharpFluid
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

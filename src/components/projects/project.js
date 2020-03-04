@@ -1,5 +1,6 @@
 import React from "react"
 import projectStyles from "./projectStyles"
+import Img from "gatsby-image"
 
 export const Project = ({ project }) => {
     const classes = projectStyles()
@@ -8,7 +9,10 @@ export const Project = ({ project }) => {
         <div className={classes.projectContainer}>
             <h3 className={classes.title}>{project.title}</h3>
             <div className={classes.descriptionContainer}>
-                <p className={classes.description}> Images Coming Soon </p>
+                <Img
+                    fluid={project.images[0].image.childImageSharp.fluid}
+                    alt="Project Picture"
+                />
                 <p className={classes.description}>{project.description}</p>
                 <p className={classes.responsibilities}>
                     {project.responsibilities}
