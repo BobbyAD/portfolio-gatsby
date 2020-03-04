@@ -17,5 +17,7 @@ link: 'https://gnarly-funky.netlify.com/'
 tech:
   - technology: React
   - technology: Django
+images:
+  - image: /img/portfolio_01.jpg
 ---
 
