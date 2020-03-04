@@ -11,8 +11,8 @@ responsibilities: >-
   CMS. Content can easily be edited or added without needing to touch source
   code via NetlifyCMS. Gatsby also provides a vehicle for me to practice GraphQL
   and React on a regular basis.
-git: asdf
-link: asdf
+git: 'https://github.com/BobbyAD/portfolio-gatsby'
+link: 'https://portfolio.bobbyad.dev/'
 tech:
   - technology: Gatsby
   - technology: React
