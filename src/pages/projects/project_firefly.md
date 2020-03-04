@@ -17,5 +17,7 @@ tech:
   - technology: React
   - technology: Firebase
   - technology: Firestore
+images:
+  - image: /img/firefly_01.jpg
 ---
 
