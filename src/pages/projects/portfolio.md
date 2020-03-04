@@ -17,6 +17,7 @@ tech:
   - technology: Gatsby
   - technology: React
   - technology: Netlify CMS
-images: []
+images:
+  - image: /img/portfolio_01.jpg
 ---
 
