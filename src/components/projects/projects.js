@@ -7,8 +7,6 @@ import projectStyles from "./projectStyles"
 const Projects = ({ data }) => {
     const classes = projectStyles()
 
-    console.log(data)
-
     return (
         <div className={classes.container}>
             <div className={classes.spacer} />
