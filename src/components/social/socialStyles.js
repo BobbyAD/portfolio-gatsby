@@ -7,7 +7,7 @@ export default createUseStyles({
         width: "100%"
     },
     link: {
-        fontSize: "1.1rem",
+        fontSize: "1.2rem",
         color: "whitesmoke",
         textDecoration: "underline",
     },
@@ -18,7 +18,7 @@ export default createUseStyles({
         display: "block",
         float: "left",
         fontSize: "1.3rem",
-        margin: "0 2%",
+        margin: "0 2% 1rem",
         '& div': {
             display: "block",
             float: "left",

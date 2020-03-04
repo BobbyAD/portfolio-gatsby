@@ -38,7 +38,7 @@ export default createUseStyles({
     linkContainer: {
         margin: ".5rem 0",
         display: 'flex',
-        fontSize: "1.1rem",
+        fontSize: "1.2rem",
     },
     link: {
         color: "whitesmoke",
