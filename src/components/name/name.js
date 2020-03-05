@@ -10,6 +10,7 @@ const Name = () => {
                 <h1 className="last">Driskell</h1>
             </div>
             <div className="fade"></div>
+            <div className="darken"></div>
         </div>
     )
 }

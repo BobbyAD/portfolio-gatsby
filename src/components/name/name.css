@@ -1,6 +1,7 @@
 /* TODO: Reformat this to JSS */
 
 .name {
+    z-index: 1;
     font-variant: small-caps;
     width: 100%;
     max-width: 1024px;
@@ -49,4 +50,12 @@
     width: 100%;
     background: rgb(9, 24, 43);
     background: linear-gradient(180deg, rgba(7,28,56,0) 80%, rgba(9, 24, 43,1) 100%), linear-gradient(180deg, rgba(7,28,56,0) 60%, rgba(9, 24, 43,1) 100%);
+}
+
+.darken {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(9, 24, 43, .2);
 }
