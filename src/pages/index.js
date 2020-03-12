@@ -13,6 +13,7 @@ import { Contact } from "../components/forms/contact.js"
 import Projects from "../components/projects/projects.js"
 import Skills from "../components/skills/skills.js"
 import Social from "../components/social/social.js"
+import Scroll from "../components/scroll/scroll"
 
 const IndexPage = () => {
     const classes = indexStyles()
@@ -21,6 +22,7 @@ const IndexPage = () => {
         <>
             <SEO title="Home" />
             <Name />
+            <Scroll />
             <div className={classes.bigContainer}>
                 <div className={classes.marginContainer}>
                     <Projects />
