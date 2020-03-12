@@ -11,13 +11,13 @@ export default createUseStyles({
         alignItems: "center",
         "& span": {
             display: "block",
-            width: "7vw",
-            height: "7vw",
+            width: "40px",
+            height: "40px",
             borderBottom: "3px solid #fff",
             borderRight: "3px solid #fff",
             transform: "rotate(45deg) skewY(-10deg) skewX(-10deg)",
             animation: "$scrollAnimation 2.4s infinite",
-            margin: "-2.6vw 0",
+            margin: "-13px 0",
         },
         "& span:nth-child(1)": {
             animationDelay: "300ms",
