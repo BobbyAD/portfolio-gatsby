@@ -1,9 +1,9 @@
 import React from "react"
 
-//CSS Reset
-import "../style/reset.css"
-//Fonts and global stuff
-import "../style/base.css"
+// //CSS Reset
+// import "../style/reset.css"
+// //Fonts and global stuff
+// import "../style/base.css"
 //Actual styling
 import indexStyles from "../style/indexStyles.js"
 
